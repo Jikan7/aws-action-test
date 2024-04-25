@@ -8,7 +8,7 @@ async function run() {
         const envs = core.getInput('envs', { required: true });
         const paths = core.getInput('paths', { required: true });
         const taskDefinitionFile = core.getInput('task-definition', { required: true });
-        const envsParts = envs.split("\n");
+        const envsParts = envs.split(" ");
         console.log(envsParts);
         for (let i=0; i<envsParts.length; i++){
             envsParts[i].trim();
